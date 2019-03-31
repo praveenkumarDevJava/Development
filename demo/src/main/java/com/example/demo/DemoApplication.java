@@ -33,7 +33,9 @@ public class DemoApplication implements CommandLineRunner{
 	        System.out.println("Our DataSource is = " + dataSource);
 	        Iterable<com.example.demo.User_details> systemlist = systemRepository.findAll();
 	        
-	      
+	        for(com.example.demo.User_details systemmodel:systemlist){
+	            System.out.println("User_Name:" + systemmodel.getUsername()+"ID:"+systemmodel.getUser_id());
+	        }
 }
 }
 
