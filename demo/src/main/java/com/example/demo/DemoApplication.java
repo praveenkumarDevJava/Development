@@ -14,7 +14,7 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 @AutoConfigurationPackage
 @EnableJpaRepositories("com.example.demo")
 @EntityScan("com.example.demo")
-public class DemoApplication implements CommandLineRunner{
+public class DemoApplication {
 	
 
     @Autowired
@@ -28,12 +28,12 @@ public class DemoApplication implements CommandLineRunner{
 	}
 
 	
-	 @Override
+/*	 @Override
 	    public void run(String... args) throws Exception {
 	        System.out.println("Our DataSource is = " + dataSource);
 	        Iterable<com.example.demo.User_details> systemlist = systemRepository.findAll();
 	        
 	      
-}
+}*/
 }
 
